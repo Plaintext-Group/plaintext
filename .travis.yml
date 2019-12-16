@@ -1,8 +1,11 @@
 before_install:
   - sudo apt-get update
   - sudo apt-get -y install pandoc
-  - sudo apt-get -y install pdflatex
+  - sudo apt-get install texlive-latex-base
+  - sudo apt-get install texlive-fonts-recommended
+  - sudo apt-get install texlive-fonts-extra
+  - sudo apt-get install texlive-latex-extra
 
-after_script:
+script:
   - make all
   - git subtree push --prefix dist origin gh-pages
