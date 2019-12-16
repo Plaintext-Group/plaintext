@@ -1,6 +1,8 @@
 before_install:
   - sudo apt-get update
   - sudo apt-get -y install pandoc
+  - sudo apt-get -y install pdflatex
 
 after_script:
   - make all
+  - git subtree push --prefix dist origin gh-pages
