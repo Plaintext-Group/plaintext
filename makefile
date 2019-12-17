@@ -16,8 +16,8 @@ PPTX_DIST_DOCS := $(wildcard $(PPTX_DIST_DIR)*/*.pptx)
 # All formats
 EXPORTED_DOCS=\
 	       $(SOURCE_DOCS:.md=.html) \
-				 $(SOURCE_DOCS:.md=.pdf) \
-				 $(SOURCE_DOCS:.md=.pptx) \
+				 # $(SOURCE_DOCS:.md=.pdf) \
+				 # $(SOURCE_DOCS:.md=.pptx) \
 
 # pandoc has to be in ur $PATH
 PANDOC=pandoc
